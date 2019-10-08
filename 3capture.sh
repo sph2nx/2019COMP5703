@@ -1,7 +1,7 @@
 #!/bin/bash
 
-i=0
-cat split.txt | tr -s '\n' | while read line
+i=-1
+cat extract.txt | tr -s '\n' | while read line
 do
     i=$(($i+1))
     sudo tcpdump -w /home/lat/Desktop/pcap/$i.pcap &
