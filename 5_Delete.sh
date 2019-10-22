@@ -2,6 +2,6 @@
 
 # Hard delete to free disk space.
 
-rm $HOME/pcap/*
-rm $HOME/txt/*
-sudo rm $HOME/.local/share/Trash/files/*
+rm -f $HOME/pcap/*
+rm -f $HOME/txt/*
+sudo rm -f $HOME/.local/share/Trash/files/*
