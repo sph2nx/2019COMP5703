@@ -11,5 +11,3 @@ do
 done
 
 rm 1_OriginUrls.txt
-mkdir $HOME/pcap/
-mkdir $HOME/txt/
