@@ -5,7 +5,7 @@
 
 wget -O 1_OriginUrls.txt -q https://raw.githubusercontent.com/DistriNet/DLWF/master/keras-dlwf/closed_world.py
 
-cat OriginUrls.txt | awk -F, '{for(i=1;i<=NF;i++){print $i;}}' | while read line
+cat 1_OriginUrls.txt | awk -F, '{for(i=1;i<=NF;i++){print $i;}}' | while read line
 do
     echo $line | cut -d "'" -f 2 >> 1_SplitUrls.txt
 done
