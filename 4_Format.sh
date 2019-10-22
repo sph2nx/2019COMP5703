@@ -12,6 +12,8 @@ for i in $(seq $istart $iend)
 do
     for j in $(seq $jstart $jend)
     do
+        istr=$(printf "%03d" "$j")
+        jstr=$(printf "%04d" "$j")
         tshark -r $HOME/pcap/$istr-$jstr.pcap -Y ssl -F k12text -w $HOME/txt/$istr-$jstr.txt
     done
 done
