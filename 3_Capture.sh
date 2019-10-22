@@ -20,7 +20,6 @@ do
         ps -ef|grep TorBrowser|grep -v grep|cut -c 10-14|xargs kill -s 15
         ps -ef|grep TorBrowser|grep -v grep|cut -c 10-14|xargs kill -s 9
         ps -ef|grep tcpdump|grep -v grep|cut -c 10-14|xargs sudo kill -s 2
-        tshark -r $HOME/pcap/$istr-$jstr.pcap -Y ssl -F k12text -w $HOME/txt/$istr-$jstr.txt
         sleep 15
     done
 done
