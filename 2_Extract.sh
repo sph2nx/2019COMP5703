@@ -4,6 +4,6 @@
 
 # Modify following parameters.
 start=1
-end=5
+end=10
 
-cat split.txt | tail -n +$start | head -n +$end > 2_ExtractedUrls.txt
+cat 1_SplitedUrls.txt | tail -n +$start | head -n +$end > 2_ExtractedUrls.txt
