@@ -15,7 +15,7 @@ do
         istring=$(printf "%03d" "$istart")
         jstring=$(printf "%04d" "$j")
         sudo tcpdump -w $HOME/pcap/$istring-$jstring.pcap &
-        exec $HOME/tor-browser_en-US/Browser/start-tor-browser $line & || exit 1
+        exec $HOME/tor-browser_en-US/Browser/start-tor-browser $line || exit 1 &
         sleep 45
         ps -ef|grep TorBrowser|grep -v grep|cut -c 10-14|xargs kill -s 15
         ps -ef|grep TorBrowser|grep -v grep|cut -c 10-14|xargs kill -s 9
