@@ -3,7 +3,7 @@
 # This shell script file will download a url list, and split urls to different
 # line. Each line will have one url.
 
-wget -O 1_OriginalUrls.txt -q https://github.com/DistriNet/DLWF/blob/master/keras-dlwf/closed_world.py
+wget -O 1_OriginalUrls.txt -q https://raw.githubusercontent.com/DistriNet/DLWF/master/keras-dlwf/closed_world.py
 
 cat 1_OriginalUrls.txt | awk -F, '{for(i=1;i<=NF;i++){print $i;}}' | while read line
 do
