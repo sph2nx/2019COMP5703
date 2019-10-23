@@ -6,4 +6,4 @@
 start=1
 end=10
 
-cat 1_SplitUrls.txt | tail -n +$start | head -n +$end > 2_ExtractUrls.txt
+cat 1_SplitUrls.txt | tail -n +$start | head -n +$(($end-$start+1)) > 2_ExtractUrls.txt
