@@ -3,6 +3,8 @@
 # Capture web browser data through tcpdump.
 
 # Modify following parameters. The files will be named as "i-j.pcap".
+# i indicates the website number.
+# j indicates the repeat times.
 istart=-1
 jstart=1
 jend=100
