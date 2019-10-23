@@ -18,5 +18,6 @@ do
         tshark -r $HOME/pcap/$istr-$jstr.pcap -Y ssl -F k12text -w $HOME/txt/$istr-$jstr.txt
         aws s3 cp $HOME/pcap/$istr-$jstr.pcap s3://usyd2019comp5703/$set/pcap/$istr/
         aws s3 cp $HOME/txt/$istr-$jstr.txt s3://usyd2019comp5703/$set/txt/$istr/
+        rm -f $HOME/txt/$istr-$jstr.txt
     done
 done
