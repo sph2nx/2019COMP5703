@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Extract needed website urls according to line number.
+# Extract needed website urls according to website number.
 
 # Modify following parameters.
-start=1
-end=10
+start=0
+end=9
 
-cat 1_SplitUrls.txt | tail -n +$start | head -n +$(($end-$start+1)) > 2_ExtractUrls.txt
+cat 1_SplitUrls.txt | tail -n +$(($start+1)) | head -n +$(($end-$start+1)) > 2_ExtractUrls.txt
