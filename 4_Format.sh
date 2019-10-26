@@ -4,9 +4,9 @@
 
 # Modify the following parameter.
 istart=0
-iend=1
+iend=9
 jstart=1
-jend=5
+jend=100
 set=training
 
 for i in $(seq $istart $iend)
