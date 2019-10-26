@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Extract needed website urls according to website number.
+# Extract needed website urls according to website number. The first website is marked as 0.
 
 # Modify following parameters.
 start=0
